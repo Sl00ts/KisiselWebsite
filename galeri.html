@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samet.WIN</title>
+    <link rel="icon" href="images/logo.png">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link 
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <canvas id="trail-canvas"></canvas>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary header">
+        <div class="container-fluid">
+          <a class="navbar-brand logo" href="index.html">
+            Samet.<span>WIN</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="bi bi-archive"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link table-active headeritems"
+                  aria-current="page"
+                  href="index.html"
+                  >Anasayfa</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link headeritems" href="egitim.html">Eğitim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link headeritems" href="hobilerim.html"
+                  >Hobilerim</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link headeritems" href="galeri.html">Galeri</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="quote-box col-lg-2 col-12">
+          <p>Rekabet, Sadece benzerler arasında olur...</p>
+        </div>
+      </nav>
+      <div class="notification-bar align-middle">
+        <div class="notification-text">Burası Sitemin Galeri Sayfasıdır</div>
+      </div>
+    </header>
+    <div class="holder container col-12 col-md-4 text-center mb-5 mt-4">
+      <div id="galericarousel" class="carousel slide container-fluid animasyonlu gecikme-1">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#galericarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="İlk Resim"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#galericarousel"
+            data-bs-slide-to="1"
+            aria-label="İkinci Resim"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#galericarousel"
+            data-bs-slide-to="2"
+            aria-label="Üçüncü Resim"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#galericarousel"
+            data-bs-slide-to="3"
+            aria-label="Dördüncü Resim"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#galericarousel"
+            data-bs-slide-to="4"
+            aria-label="Beşinci Resim"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#galericarousel"
+            data-bs-slide-to="5"
+            aria-label="Altıncı Resim"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#galericarousel"
+            data-bs-slide-to="6"
+            aria-label="Yedinci Resim"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#galericarousel"
+            data-bs-slide-to="7"
+            aria-label="Sekizinci Resim"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#galericarousel"
+            data-bs-slide-to="8"
+            aria-label="Dokuzuncu Resim"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#galericarousel"
+            data-bs-slide-to="9"
+            aria-label="Onuncu Resim"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="images/MVIMG_20250917_161341.jpg"
+              class="d-block w-100"
+              alt=""
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>İlk Resim</h5>
+              <p>Atölye kurarken çekmiştim</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/MVIMG_20251219_154338.jpg"
+              class="d-block w-100"
+              alt=""
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>İkinci Resim</h5>
+              <p>XAMPP kurma işkencesinin yüzüme yansıyışı</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/IMG_20250920_175135.jpg"
+              class="d-block w-100"
+              alt=""
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Üçüncü Resim</h5>
+              <p>Dışardan dönüş bunaltı</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/MVIMG_20251207_001337.jpg"
+              class="d-block w-100"
+              alt=""
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Dördüncü Resim</h5>
+              <p>Gece gece markete çıkmak çok zevkli</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/MVIMG_20251201_161828.jpg"
+              class="d-block w-100"
+              alt=""
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Beşinci Resim</h5>
+              <p>Feribot mutlu beğendi</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/MVIMG_20251004_223031.jpg"
+              class="d-block w-100"
+              alt=""
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Altıncı Resim</h5>
+              <p>Kruvasan çok severim</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/MVIMG_20251024_204135.jpg"
+              class="d-block w-100"
+              alt=""
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Yedinci Resim</h5>
+              <p>En derin sohbet/dertleşme mekanı</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/MVIMG_20251012_154531.jpg"
+              class="d-block w-100"
+              alt=""
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Sekizinci Resim</h5>
+              <p>Sura gezmeye çıkmak,kolyeyi unuttum</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/IMG_20250808_111604.jpg"
+              class="d-block w-100"
+              alt=""
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Dokuzuncu Resim</h5>
+              <p>Fethiye tatilinde en eğlenceli anlardan, feribot gezisi</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/IMG_20250831_150842.jpg"
+              class="d-block w-100"
+              alt=""
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Onuncu Resim</h5>
+              <p>Günün sıkıntısı ile dolaşmak</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#galericarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Önceki</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#galericarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Sonraki</span>
+        </button>
+      </div>
+    </div>
+    <footer class="fixed-bottom footer">
+      <p class="footertext">Made with 💜 by Samet Efe KAPER</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/javascript.js"></script>
+  </body>
+</html>
